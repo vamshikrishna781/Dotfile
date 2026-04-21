@@ -14,8 +14,8 @@ This repository comes with an interactive installer to make setting up your syst
 
 1. Clone this repository to your home folder:
 ```bash
-git clone https://github.com/YOUR_USERNAME/dotfiles.git ~/Dotfiles
-cd ~/Dotfiles
+git clone https://github.com/vamshikrishna781/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
 ```
 
 2. Run the interactive installer:
