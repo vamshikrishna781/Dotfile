@@ -1,0 +1,26 @@
+"modules-right": [
+    "custom/cam",
+    "pulseaudio#microphone",
+    "cpu",
+    "memory",
+    "clock"
+],
+
+"pulseaudio#microphone": {
+    "format": "{format_source}",
+    "format-source": " {volume}%",
+    "format-source-muted": " Muted",
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle",
+    "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SOURCE@ 5%+",
+    "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SOURCE@ 5%-",
+    "on-click-right": "pavucontrol", // Opens the GUI to choose device
+    "tooltip": true
+},
+
+"custom/cam": {
+    "format": "{}",
+    "exec": "lsmod | grep -q uvcvideo && echo '󰄀 ON' || echo '󰗟 OFF'",
+    "interval": 1,
+    "on-click": "~/.config/hypr/scripts/studio_dock.sh toggle-cam",
+    "tooltip-format": "Left click to Block/Unblock Camera"
+}
