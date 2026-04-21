@@ -12,7 +12,12 @@ Welcome to my personal Dotfiles repository! This is a complete, pre-configured a
 
 This repository comes with an interactive installer to make setting up your system effortless. You can choose to install everything at once, or cherry-pick specific components (like just the Waybar or just the Wofi configurations).
 
-1. Clone this repository to your home folder:
+1. **Install Prerequisites**: Ensure you have `git` and `base-devel` installed on your fresh Arch Linux system:
+```bash
+sudo pacman -S --needed git base-devel
+```
+
+2. **Clone this repository** to your home folder:
 ```bash
 git clone https://github.com/vamshikrishna781/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
