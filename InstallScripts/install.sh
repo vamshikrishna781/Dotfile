@@ -14,6 +14,8 @@ echo "3. Waybar"
 echo "4. Wofi"
 echo "5. Swaync"
 echo "6. Kitty"
+echo "7. Icons & Fonts"
+echo "8. Optional Apps"
 echo "q. Quit"
 echo ""
 read -rp "Choose an option: " choice
@@ -25,6 +27,8 @@ case "${choice,,}" in
     4) target="wofiinstall.sh" ;;
     5) target="swayncinstall.sh" ;;
     6) target="kittyinstall.sh" ;;
+    7) target="iconsinstall.sh" ;;
+    8) target="appsinstall.sh" ;;
     q) echo "Goodbye."; exit 0 ;;
     *) echo "Invalid choice: $choice"; exit 1 ;;
 esac
