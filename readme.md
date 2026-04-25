@@ -19,17 +19,23 @@ sudo pacman -S --needed git base-devel
 
 2. **Clone this repository** to your home folder:
 ```bash
-git clone https://github.com/vamshikrishna781/dotfiles.git ~/.dotfiles
-cd ~/.dotfiles
+git clone https://github.com/vamshikrishna781/Dotfiles.git ~/.Dotfiles
+cd ~/.Dotfiles
 ```
 
-2. Run the interactive installer:
+> **Note:** If GitHub is blocked by your ISP/DNS, use this alternative to bypass the block using DNS-over-HTTPS:
+> ```bash
+> mkdir -p ~/.Dotfiles && curl -sL --doh-url https://1.1.1.1/dns-query https://github.com/vamshikrishna781/Dotfiles/archive/refs/heads/main.tar.gz | tar -xz -C ~/.Dotfiles --strip-components=1
+> cd ~/.Dotfiles
+> ```
+
+3. Run the interactive installer:
 ```bash
 cd InstallScripts
 ./install.sh
 ```
 
-3. Select your desired installation from the menu!
+4. Select your desired installation from the menu!
 
 ### Important Notes
 If you are doing a **Full Install**, the script relies on `packages.txt` to install all necessary dependencies. Ensure you run the script on an Arch-based system with `yay` access.
